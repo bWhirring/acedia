@@ -1,5 +1,1 @@
-export interface Params {
-    data: string;
-    dir: string;
-}
-export declare function validate(param: Params): void;
+export declare function validate(data: string, dir: string): void;
