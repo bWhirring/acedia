@@ -1,6 +1,6 @@
 {
   "name": "acedia",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple canvas to image",
   "main": "bin/index.js",
   "scripts": {

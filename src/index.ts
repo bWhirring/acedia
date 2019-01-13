@@ -1,11 +1,8 @@
 import * as fs from "fs";
-
-interface Params {
-  data: string;
-  dir: string;
-}
+import { validate, Params } from "./util";
 
 function acedia(param: Params) {
+  validate(param);
   let { data, dir } = param;
   data = data.replace(/^data:image\/\w+;base64,/, "");
   const dataBuffer = new Buffer(data, "base64");
