@@ -6,6 +6,7 @@ function acedia(data: string, dir: string) {
   data = data.replace(/^data:image\/\w+;base64,/, "");
   const dataBuffer = new Buffer(data, "base64");
   fs.writeFileSync(dir, dataBuffer);
+  return true;
 }
 
 module.exports = acedia;

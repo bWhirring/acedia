@@ -1,10 +1,11 @@
 {
   "name": "acedia",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "simple canvas to image",
   "main": "bin/index.js",
   "scripts": {
-    "start": "npx tsc"
+    "start": "npx tsc",
+    "test": "npx jest"
   },
   "keywords": [
     "canvas"
@@ -17,6 +18,14 @@
   "license": "MIT",
   "dependencies": {
     "@types/node": "^10.12.18",
+    "ts-jest": "^23.10.5",
     "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.13",
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "modulePaths": ["./bin/**/*"]
   }
 }
